@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class portalScript : MonoBehaviour
 {
+    public GameObject player;
+    public Transform exitPortalSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,11 @@ public class portalScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        Destroy(collider.gameObject);
+        Instantiate(player, exitPortalSpawn.position, Quaternion.identity);
     }
 }

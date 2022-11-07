@@ -47,3 +47,6 @@ TagManager:
   - name: Player
     uniqueID: 2046883859
     locked: 0
+  - name: Portal
+    uniqueID: 4288804083
+    locked: 0
