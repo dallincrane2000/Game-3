@@ -8,12 +8,16 @@ public class playerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Transform portalSpawnPoint;
     public GameObject portal;
+    public Animator animator;
 
     Vector2 movement;
 
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+        animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         if (Input.GetKeyDown(KeyCode.E))
