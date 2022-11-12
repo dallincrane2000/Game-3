@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     public Animator animator;
     public GameObject player;
     public GameObject enemy;
+    private CircleCollider2D enemyCircle;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,17 +22,16 @@ public class Bullet : MonoBehaviour
     {
         if(hitInfo.CompareTag("Player"))
         {
-            Physics.IgnoreCollision(GetComponent<Collider>(), player.GetComponent<Collider>());
+            Physics.IgnoreCollision(this.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
         }
-        if(hitInfo.CompareTag("Player"))
-        {
-            Physics.IgnoreCollision(GetComponent<Collider>(), enemy.GetComponent<Collider>());
-        }
+
+        Destroy(gameObject);
+
         //Enemy enemy = hitInfo.GetComponent<Enemy>();
         //if(enemy != null)
         //{
        //     enemy.takeDamage(damage);
         //}
-        Destroy(gameObject);
+        
     }
 }
