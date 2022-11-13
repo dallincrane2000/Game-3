@@ -5,12 +5,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 20;
-    public float damage = 1.0f;
+    public float damage = 10f;
     public Rigidbody2D rb;
     public Animator animator;
     public GameObject player;
-    public GameObject enemy;
-    private CircleCollider2D enemyCircle;
+    private GameObject parentObj;
+    private GameObject childObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,18 +20,17 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if(hitInfo.CompareTag("Player"))
+        if(hitInfo.CompareTag("Player") && gameObject)
         {
-            Physics.IgnoreCollision(this.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
+            Physics.IgnoreCollision(GetComponent<Collider>(), player.GetComponent<Collider>(), true);
         }
-
         Destroy(gameObject);
 
-        //Enemy enemy = hitInfo.GetComponent<Enemy>();
-        //if(enemy != null)
-        //{
-       //     enemy.takeDamage(damage);
-        //}
+        enemy enemy1 = hitInfo.GetComponentInChildren<enemy>();
+        if(enemy1 != null)
+        {
+           enemy1.takeDamage(damage);
+        }
         
     }
 }

@@ -8,6 +8,7 @@ public class enemy : MonoBehaviour
     [SerializeField] private float attackDamage = 10f;
     [SerializeField] private float attackSpeed = 1f;
     private float canAttack;
+    public float health = 50.0f;
 
 
     private void OnCollisionStay2D(Collision2D other)
@@ -23,7 +24,15 @@ public class enemy : MonoBehaviour
             {
                 canAttack += Time.deltaTime;
             }
-            
+        }
+    }
+
+    public void takeDamage(float damage)
+    {
+        health -= damage;
+        if(health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 

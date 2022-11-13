@@ -7219,7 +7219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 386187892}
-  bulletPrefab: {fileID: 7787558336109562930, guid: b8007af133454dc499f2fc8fd2142d80, type: 3}
+  bulletPrefab: {fileID: 4805722095198839076, guid: b8007af133454dc499f2fc8fd2142d80, type: 3}
   offset: 0
 --- !u!1001 &1288987171
 PrefabInstance:
@@ -7235,7 +7235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8078677508409633312, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8078677508409633312, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: m_TagString
@@ -7557,6 +7557,10 @@ PrefabInstance:
     - target: {fileID: 6097106370955104924, guid: fa139efe3a85d2c499b5c05bad5d0954, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097106370955104924, guid: fa139efe3a85d2c499b5c05bad5d0954, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6097106370955104927, guid: fa139efe3a85d2c499b5c05bad5d0954, type: 3}
       propertyPath: m_RootOrder
