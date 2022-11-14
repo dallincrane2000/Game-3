@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/ai_arena.unity
+    guid: 353362f5150e29448a51a9f07a76b760
+  - enabled: 1
+    path: Assets/Scenes/Scene 1.unity
+    guid: b631ebc7fb87f474597b656fa2722df6
+  - enabled: 1
+    path: Assets/Scenes/Scene 2.unity
+    guid: 9d7a22bc3f51a5c4fb5788070b5aaec3
   m_configObjects: {}

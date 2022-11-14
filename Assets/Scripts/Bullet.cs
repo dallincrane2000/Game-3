@@ -20,17 +20,20 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if(hitInfo.CompareTag("Player") && gameObject)
+        if(gameObject)
         {
-            Physics.IgnoreCollision(GetComponent<Collider>(), player.GetComponent<Collider>(), true);
-        }
-        Destroy(gameObject);
+            if(hitInfo.CompareTag("Player"))
+            {
+                Physics.IgnoreCollision(GetComponent<Collider>(), player.GetComponent<Collider>(), true);
+            }
+            
+            Destroy(gameObject);
 
-        enemy enemy1 = hitInfo.GetComponentInChildren<enemy>();
-        if(enemy1 != null)
-        {
-           enemy1.takeDamage(damage);
-        }
-        
+            enemy enemy1 = hitInfo.GetComponentInChildren<enemy>();
+            if(enemy1 != null)
+            {
+            enemy1.takeDamage(damage);
+            }
+        }  
     }
 }
