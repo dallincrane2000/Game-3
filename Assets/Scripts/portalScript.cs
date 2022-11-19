@@ -20,7 +20,11 @@ public class portalScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Destroy(collider.gameObject);
-        Instantiate(player, exitPortalSpawn.position, Quaternion.identity);
+        if(collider.tag == "Player")
+        {
+            Destroy(collider.gameObject);
+            Instantiate(player, exitPortalSpawn.position, Quaternion.identity);
+        }
+
     }
 }

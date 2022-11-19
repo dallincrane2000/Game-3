@@ -12,6 +12,11 @@ public class playerMovement : MonoBehaviour
 
     Vector2 movement;
 
+    void Start()
+    {
+        animator = gameObject.GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -104,7 +104,7 @@ MonoBehaviour:
   damage: 10
   rb: {fileID: 4212404736735521062}
   animator: {fileID: 8276852965531418303}
-  player: {fileID: 8078677508409633312, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+  player: {fileID: 4048603457550422578, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
 --- !u!50 &4212404736735521062
 Rigidbody2D:
   serializedVersion: 4
