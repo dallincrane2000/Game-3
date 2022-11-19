@@ -5,14 +5,21 @@ using UnityEngine;
 public class enemyFollow : MonoBehaviour
 {
     private Transform target;
+    private GameObject enemyParent;
     public float speed = 3f;
     // Update is called once per frame
+
+    void Start()
+    {
+        enemyParent = this.transform.parent.gameObject;
+        //this.transform.parent = enemyParent;
+    }
     void Update()
     {
         if (target != null)
         {
             float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, target.position, step);
+            enemyParent.transform.position = Vector2.MoveTowards(enemyParent.transform.position, target.position, step);
         }
     }
     

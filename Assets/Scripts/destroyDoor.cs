@@ -14,7 +14,7 @@ public class destroyDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!GameObject.Find("Enemy"))
+        if(GameObject.FindWithTag("Enemy") == false)
         {
             Destroy(gameObject);
         }
