@@ -7142,7 +7142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartPrefab: {fileID: 1243501661171248451, guid: ca00ad0a15830244bbf412a26e7e8f4d, type: 3}
-  playerHealth: {fileID: 1955882014}
+  playerHealth: {fileID: 0}
 --- !u!114 &239252123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7267,7 +7267,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 386187892}
-  m_Father: {fileID: 1955882013}
+  m_Father: {fileID: 1288987172}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &843684951
@@ -7514,6 +7514,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8078677508409633312, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7573,7 +7581,7 @@ PrefabInstance:
     - target: {fileID: 8078677508409633340, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 1955882019}
+      objectReference: {fileID: 0}
     - target: {fileID: 8078677508409633341, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: m_Mass
       value: 10
@@ -7604,10 +7612,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8078677508409633314, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       insertIndex: -1
       addedObject: {fileID: 843684950}
   m_SourcePrefab: {fileID: 100100000, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+--- !u!4 &1288987172 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+  m_PrefabInstance: {fileID: 1288987171}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1514055424
 GameObject:
   m_ObjectHideFlags: 0
@@ -7742,7 +7755,7 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 0
-  player: {fileID: 1955882013}
+  player: {fileID: 0}
 --- !u!1 &1676295528
 GameObject:
   m_ObjectHideFlags: 0
@@ -7786,52 +7799,8 @@ Transform:
   m_Children:
   - {fileID: 205557325}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1955882008 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8078677508409633312, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
-  m_PrefabInstance: {fileID: 1288987171}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1955882013 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8078677508409633314, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
-  m_PrefabInstance: {fileID: 1288987171}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1955882014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955882008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9e9172c0295f54eb6a5005dfb2363e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 6
-  maxHealth: 6
---- !u!95 &1955882019
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955882008}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eced6ddfd52527d40973f994f3816607, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6097106371418773581
 PrefabInstance:
   m_ObjectHideFlags: 0
