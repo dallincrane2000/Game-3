@@ -664,7 +664,7 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 0
-  player: {fileID: 1570312836}
+  player: {fileID: 0}
 --- !u!114 &832264471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,6 +911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b74f194985dbe46aa58ebbd8aff0ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  door: {fileID: 899548674}
+  doorAnimate: {fileID: 899548678}
 --- !u!1001 &944030935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1083,7 +1085,7 @@ Transform:
   - {fileID: 2102507842}
   - {fileID: 1865035456}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1060209993
 GameObject:
@@ -1552,7 +1554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartPrefab: {fileID: 1243501661171248451, guid: ca00ad0a15830244bbf412a26e7e8f4d, type: 3}
-  playerHealth: {fileID: 1570312830}
+  playerHealth: {fileID: 0}
 --- !u!114 &1320715267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1938,22 +1940,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1570312830 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4048603457550422579, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
-  m_PrefabInstance: {fileID: 1749691895}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9e9172c0295f54eb6a5005dfb2363e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1570312836 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
-  m_PrefabInstance: {fileID: 1749691895}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1710207726
 PrefabInstance:
   m_ObjectHideFlags: 0
