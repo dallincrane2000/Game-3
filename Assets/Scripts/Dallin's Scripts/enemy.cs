@@ -8,7 +8,7 @@ public class enemy : MonoBehaviour
     [SerializeField] private int attackDamage = 10;
     [SerializeField] private float attackSpeed = 1f;
     private float canAttack;
-    public float health = 50.0f;
+    private float health = 10.0f;
 
     private void OnCollisionStay2D(Collision2D other)
     {

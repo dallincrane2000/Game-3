@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Here");
         if(other.tag == "EnemyBullet")
         {
-            health -= 1;
+            TakeDamage(1);
         }
     }
     /*public void UpdateHealth(float mod)
