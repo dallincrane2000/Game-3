@@ -1976,11 +1976,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1630874617123499615, guid: d9431051017352b49b67ef7097972e59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.08
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1630874617123499615, guid: d9431051017352b49b67ef7097972e59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -24.39
+      value: -10.34
       objectReference: {fileID: 0}
     - target: {fileID: 1630874617123499615, guid: d9431051017352b49b67ef7097972e59, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2109,6 +2109,14 @@ PrefabInstance:
     - target: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.72
       objectReference: {fileID: 0}
     - target: {fileID: 4048603457550422584, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: dashSpeed

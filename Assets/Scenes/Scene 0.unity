@@ -14466,17 +14466,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4048603457550422579, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048603457550422579, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.39
+      value: 0.87
       objectReference: {fileID: 0}
     - target: {fileID: 4048603457550422581, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.03
+      value: -5.21
       objectReference: {fileID: 0}
     - target: {fileID: 4048603457550422584, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: dashSpeed
@@ -14694,7 +14702,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1171097945}
-  bulletPrefab: {fileID: 4805722095198839076, guid: b8007af133454dc499f2fc8fd2142d80, type: 3}
   offset: 0
 --- !u!212 &2118812239
 SpriteRenderer:
