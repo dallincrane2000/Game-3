@@ -12967,6 +12967,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6204383959191623824, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
   m_PrefabInstance: {fileID: 81261723}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &81261725 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6204383959191623830, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+  m_PrefabInstance: {fileID: 81261723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9e9172c0295f54eb6a5005dfb2363e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &97003729
 GameObject:
   m_ObjectHideFlags: 0
@@ -17928,7 +17939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartPrefab: {fileID: 1243501661171248451, guid: ca00ad0a15830244bbf412a26e7e8f4d, type: 3}
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 81261725}
 --- !u!114 &190825277
 MonoBehaviour:
   m_ObjectHideFlags: 0
