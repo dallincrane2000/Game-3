@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ai_arena.unity
     guid: 353362f5150e29448a51a9f07a76b760
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 0e31a269c5f815f47a9d25181d7a41b6
   m_configObjects: {}
