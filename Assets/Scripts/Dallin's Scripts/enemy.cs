@@ -10,7 +10,6 @@ public class enemy : MonoBehaviour
     private float canAttack;
     public float health = 50.0f;
 
-
     private void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")

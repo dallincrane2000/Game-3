@@ -7,11 +7,16 @@ public class enemyFollow : MonoBehaviour
     private Transform target;
     private GameObject enemyParent;
     public float speed = 3f;
+    public GameObject bullet;
+    public Transform firePoint;
+    private float timeBetweenShots;
+    public float startTimeBtwShots;
     // Update is called once per frame
 
     void Start()
     {
         enemyParent = this.transform.parent.gameObject;
+        timeBetweenShots = startTimeBtwShots;
         //this.transform.parent = enemyParent;
     }
     void Update()
@@ -25,6 +30,16 @@ public class enemyFollow : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(timeBetweenShots <= 0)
+            {
+                Instantiate(bullet, firePoint.position, Quaternion.identity);
+                timeBetweenShots = startTimeBtwShots;
+            }
+            else
+            {
+                timeBetweenShots -= Time.deltaTime;
+            }
+
         if (other.gameObject.tag == "Player")
         {
             target = other.transform;
