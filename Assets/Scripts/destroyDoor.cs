@@ -16,6 +16,7 @@ public class destroyDoor : MonoBehaviour
     {
         if(GameObject.FindWithTag("Enemy") == false)
         {
+            
             Destroy(gameObject);
         }
     }

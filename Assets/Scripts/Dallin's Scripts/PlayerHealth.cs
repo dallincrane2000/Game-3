@@ -28,6 +28,15 @@ public class PlayerHealth : MonoBehaviour
             OnPlayerDeath?.Invoke();
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Here");
+        if(other.tag == "EnemyBullet")
+        {
+            health -= 1;
+        }
+    }
     /*public void UpdateHealth(float mod)
     {
         health += mod;
