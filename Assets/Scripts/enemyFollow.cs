@@ -17,10 +17,9 @@ public class enemyFollow : MonoBehaviour
     {
         enemyParent = this.transform.parent.gameObject;
         timeBetweenShots = startTimeBtwShots;
-        //this.transform.parent = enemyParent;
     }
     void Update()
-    {
+    {   
         if (target != null)
         {
             float step = speed * Time.deltaTime;
@@ -28,9 +27,13 @@ public class enemyFollow : MonoBehaviour
         }
     }
     
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if(timeBetweenShots <= 0)
+        if (other.gameObject.tag == "Player")
+        {
+            target = other.transform;
+
+            if(timeBetweenShots <= 0)
             {
                 Instantiate(bullet, firePoint.position, Quaternion.identity);
                 timeBetweenShots = startTimeBtwShots;
@@ -39,10 +42,6 @@ public class enemyFollow : MonoBehaviour
             {
                 timeBetweenShots -= Time.deltaTime;
             }
-
-        if (other.gameObject.tag == "Player")
-        {
-            target = other.transform;
         }
     }
     
@@ -51,6 +50,7 @@ public class enemyFollow : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             target = null;
+            //Destroy(bullet)
         }
     }
 }

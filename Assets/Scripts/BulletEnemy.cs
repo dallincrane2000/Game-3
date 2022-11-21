@@ -27,17 +27,9 @@ public class BulletEnemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if(hitInfo.CompareTag("Flying Enemy"))
+        if(hitInfo.CompareTag("Enemy"))
         {
             Physics.IgnoreCollision(GetComponent<Collider>(), player.GetComponent<Collider>());
-        }
-        if(hitInfo.CompareTag("Ground"))
-        {
-           Destroy(gameObject);
-        }
-        if(hitInfo.CompareTag("BulletPlayer"))
-        {
-           Destroy(gameObject);
         }
     }
     
