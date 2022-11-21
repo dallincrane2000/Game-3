@@ -5,14 +5,14 @@ using UnityEngine;
 public class weapon : MonoBehaviour
 {
     public Transform firePoint;
-    private GameObject bulletPrefab;
+    public GameObject bulletPrefab;
     public float offset;
     private Transform initialposition;
 
     void Start()
     {   
-        bulletPrefab = GameObject.Find("Bullet(Clone)");
-        initialposition.position = this.transform.position;
+        //bulletPrefab = GameObject.Find("Bullet(Clone)");
+        //initialposition.position = this.transform.position;
     }
 
     void Update()
