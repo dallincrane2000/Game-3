@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public static event Action OnPlayerDamaged;
     public static event Action OnPlayerDeath;
 
-    public float health, maxHealth;
+    public float health, maxHealth, bulletDamage;
 
     private void Start()
     {
@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Here");
         if(other.tag == "EnemyBullet")
         {
-            TakeDamage(1);
+            TakeDamage(bulletDamage);
         }
     }
     /*public void UpdateHealth(float mod)

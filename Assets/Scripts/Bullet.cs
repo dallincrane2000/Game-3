@@ -30,9 +30,13 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
 
             enemy enemy1 = hitInfo.GetComponentInChildren<enemy>();
+            Overlord overlord1 = hitInfo.GetComponentInChildren<Overlord>();
             if(enemy1 != null)
             {
             enemy1.takeDamage(damage);
+            } else if(overlord1 != null)
+            {
+                overlord1.takeDamage(damage);
             }
         }  
     }
