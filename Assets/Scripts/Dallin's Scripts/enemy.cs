@@ -9,6 +9,7 @@ public class enemy : MonoBehaviour
     [SerializeField] private float attackSpeed = 1f;
     private float canAttack;
     public float health = 10.0f;
+    
 
     public AudioSource EnemyDeath;
 
@@ -33,6 +34,7 @@ public class enemy : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
+            
             Destroy(gameObject);
             EnemyDeath.Play();
         }
