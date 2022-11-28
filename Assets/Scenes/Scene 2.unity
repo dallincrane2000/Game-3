@@ -406,6 +406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1630874615770653983, guid: d9431051017352b49b67ef7097972e59, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1630874617123499612, guid: d9431051017352b49b67ef7097972e59, type: 3}
       propertyPath: health
       value: 10
