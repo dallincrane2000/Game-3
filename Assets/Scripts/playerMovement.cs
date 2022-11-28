@@ -9,8 +9,6 @@ public class playerMovement : MonoBehaviour
     public GameObject portal;
     public Animator animator;
 
-    public AudioSource crateAudio;
-
     [SerializeField] float startDashTime = .25f;
     [SerializeField] float dashSpeed = 15f;
  
@@ -88,24 +86,6 @@ public class playerMovement : MonoBehaviour
         if(canMove == true)
         {
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        }
-    }
-
-
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "PushObject")
-        {
-            crateAudio.Play();
-        }
-
-    }
-
-    public void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "PushObject")
-        {
-            crateAudio.Stop();
         }
     }
 }

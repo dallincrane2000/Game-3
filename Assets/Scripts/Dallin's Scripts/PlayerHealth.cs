@@ -13,11 +13,6 @@ public class PlayerHealth : MonoBehaviour
 
     public float health, maxHealth, bulletDamage;
 
-    public AudioSource playerDamage;
-    //public AudioSource playerDeath;
-
-
-
     private void Start()
     {
         healthManager = GameObject.Find("HealthManager");
@@ -29,16 +24,14 @@ public class PlayerHealth : MonoBehaviour
         health -= amount;
         healthManager.GetComponent<healthManager>().health = health;
         OnPlayerDamaged?.Invoke();
-        playerDamage.Play();
 
         if (health <= 0)
         {
             health = 0;
-            OnPlayerDeath?.Invoke();
             Destroy(gameObject);
             Debug.Log("Player Dead");
-            //playerDeath.Play();
-            SceneManager.LoadScene("GameOver");
+            OnPlayerDeath?.Invoke();
+            SceneManager.LoadScene(6);
         }
     }
 

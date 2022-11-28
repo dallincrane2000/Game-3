@@ -10,9 +10,6 @@ public class enemy : MonoBehaviour
     private float canAttack;
     public float health = 10.0f;
 
-    public AudioSource enemyDeath;
-
-
     private void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -35,7 +32,6 @@ public class enemy : MonoBehaviour
         if(health <= 0)
         {
             Destroy(gameObject);
-            enemyDeath.Play();
         }
     }
 
