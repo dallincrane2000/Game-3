@@ -324,7 +324,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f7305803d149a3044af117b212565a94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19002,7 +19002,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532d80a98c4060741a8b7fd692990d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  rb: {fileID: 0}
+  moveSpeed: 5
   bullet: {fileID: 600488086648282703, guid: 885c4310997acf147bd1b8cd999541b1, type: 3}
   firePoint: {fileID: 376970824}
   startTimeBtwShots: 0.25
