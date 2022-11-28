@@ -13009,6 +13009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6204383959191623831, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6204383960099467676, guid: 5470ceec15fa22949b840dc32d69dc41, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -14805,6 +14809,10 @@ PrefabInstance:
     - target: {fileID: 1630874615770653983, guid: d9431051017352b49b67ef7097972e59, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630874616888985093, guid: d9431051017352b49b67ef7097972e59, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1630874617123499615, guid: d9431051017352b49b67ef7097972e59, type: 3}
       propertyPath: m_RootOrder
