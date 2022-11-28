@@ -24,13 +24,4 @@ public class BulletEnemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    void OnTriggerEnter2D(Collider2D hitInfo)
-    {
-        if(hitInfo.CompareTag("Enemy"))
-        {
-            Physics.IgnoreCollision(GetComponent<Collider>(), player.GetComponent<Collider>());
-        }
-    }
-    
 }
