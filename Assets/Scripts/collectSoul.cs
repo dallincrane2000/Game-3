@@ -11,14 +11,11 @@ public class collectSoul : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        void OnTriggerEnter2D(Collider2D other)
+        if(other.gameObject.tag == "Player")
         {
-            if(other.gameObject.tag == "Player")
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 }
