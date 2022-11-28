@@ -10,7 +10,7 @@ public class destroyDoor : MonoBehaviour
 
     void Start()
     {
-       //doorAnimate = this.GetComponent<Animator>();
+       doorAnimate = this.GetComponent<Animator>();
     }
     void Update()
     {
