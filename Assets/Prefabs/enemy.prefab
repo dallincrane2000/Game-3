@@ -34,7 +34,7 @@ Transform:
   - {fileID: 1630874616888985090}
   - {fileID: 1630874617678326209}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1630874617123499610
 SpriteRenderer:
@@ -129,7 +129,7 @@ MonoBehaviour:
   speed: 3
   attackDamage: 1
   attackSpeed: 1
-  health: 50
+  health: 10
 --- !u!1 &1630874616888985093
 GameObject:
   m_ObjectHideFlags: 0
