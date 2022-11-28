@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour
 
     public float health, maxHealth, bulletDamage;
 
+    public AudioSource PlayerDamage;
+
     private void Start()
     {
         healthManager = GameObject.Find("HealthManager");
@@ -22,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         health -= amount;
+        PlayerDamage.Play();
         healthManager.GetComponent<healthManager>().health = health;
         OnPlayerDamaged?.Invoke();
 
