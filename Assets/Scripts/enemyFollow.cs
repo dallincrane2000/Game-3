@@ -12,8 +12,14 @@ public class enemyFollow : MonoBehaviour
     public Transform firePoint;
     private float timeBetweenShots;
     public float startTimeBtwShots;
+<<<<<<< Updated upstream
     private Vector2 movement;
     private float step;
+=======
+
+    public AudioSource enemyNotice;
+
+>>>>>>> Stashed changes
     // Update is called once per frame
 
     void Start()
@@ -25,11 +31,18 @@ public class enemyFollow : MonoBehaviour
     {   
         if (target != null)
         {
+<<<<<<< Updated upstream
             Vector3 direction = target.position - enemyParent.transform.position;
             //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             //rb.rotation = angle;
             direction.Normalize();
             movement = direction;
+=======
+            enemyNotice.Play();
+
+            float step = speed * Time.deltaTime;
+            enemyParent.transform.position = Vector2.MoveTowards(enemyParent.transform.position, target.position, step);
+>>>>>>> Stashed changes
         }
     }
 

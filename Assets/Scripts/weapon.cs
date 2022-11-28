@@ -8,6 +8,8 @@ public class weapon : MonoBehaviour
     public GameObject bulletPrefab;
     public float offset;
     private Transform initialposition;
+    public AudioSource ArrowSound;
+
 
     void Start()
     {   
@@ -25,11 +27,13 @@ public class weapon : MonoBehaviour
             if(Input.GetMouseButtonDown(0))
             {
                 Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-                //float dist = Vector3.Distance(initialposition.position, bulletPrefab.transform.position);
-                //if(dist >= 3)
-                //{
-                //   Destroy(bulletPrefab);
-                //}
-            }
+                ArrowSound.Play();
+
+            //float dist = Vector3.Distance(initialposition.position, bulletPrefab.transform.position);
+            //if(dist >= 3)
+            //{
+            //   Destroy(bulletPrefab);
+            //}
+        }
     }
 }

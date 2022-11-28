@@ -7,6 +7,8 @@ public class HealthHeart : MonoBehaviour
 {
     public Sprite fullHeart, halfHeart, emptyHeart;
     Image heartImage;
+
+
     private void Awake()
     {
         heartImage = GetComponent<Image>();
