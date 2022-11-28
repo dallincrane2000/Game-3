@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class collectSoul : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter2D(Collider2D other)
     {
+<<<<<<< Updated upstream
         
     }
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D other)
     {
+=======
+>>>>>>> Stashed changes
         if(other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
