@@ -9,16 +9,20 @@ public class PlayerHealth : MonoBehaviour
     public static event Action OnPlayerDamaged;
     public static event Action OnPlayerDeath;
 
+     private GameObject healthManager;
+
     public float health, maxHealth, bulletDamage;
 
     private void Start()
     {
-        health = maxHealth;
+        healthManager = GameObject.Find("HealthManager");
+        health = healthManager.GetComponent<healthManager>().health;
     }
 
     public void TakeDamage(float amount)
     {
         health -= amount;
+        healthManager.GetComponent<healthManager>().health = health;
         OnPlayerDamaged?.Invoke();
 
         if (health <= 0)
