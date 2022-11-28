@@ -9,6 +9,8 @@ public class weapon : MonoBehaviour
     public float offset;
     private Transform initialposition;
 
+    public AudioSource ArrowSound;
+
     void Start()
     {   
         //bulletPrefab = GameObject.Find("Bullet(Clone)");
@@ -24,6 +26,7 @@ public class weapon : MonoBehaviour
             
             if(Input.GetMouseButtonDown(0))
             {
+            ArrowSound.Play();
                 Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
                 //float dist = Vector3.Distance(initialposition.position, bulletPrefab.transform.position);
                 //if(dist >= 3)
