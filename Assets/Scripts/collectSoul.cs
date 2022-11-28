@@ -6,6 +6,7 @@ public class collectSoul : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Here");
         if(other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
