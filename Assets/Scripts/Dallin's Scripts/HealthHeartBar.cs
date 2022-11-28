@@ -7,6 +7,7 @@ public class HealthHeartBar : MonoBehaviour
     public GameObject heartPrefab;
     public PlayerHealth playerHealth;
     List<HealthHeart> hearts = new List<HealthHeart>();
+    private GameObject healthManager;
 
     private void OnEnable()
     {
@@ -20,6 +21,7 @@ public class HealthHeartBar : MonoBehaviour
 
     private void Start()
     {
+        healthManager = GameObject.Find("HealthManager");
         DrawHearts();
     }
 
@@ -36,7 +38,7 @@ public class HealthHeartBar : MonoBehaviour
 
         for (int i = 0; i < hearts.Count; i++)
         {
-            int heartStatusRemainder = (int)Mathf.Clamp(playerHealth.health - (i * 2), 0, 2);
+            int heartStatusRemainder = (int)Mathf.Clamp(healthManager.GetComponent<healthManager>().health - (i * 2), 0, 2);
             hearts[i].SetHeartImage((HeartStatus)heartStatusRemainder);
         }
     }

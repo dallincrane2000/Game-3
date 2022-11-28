@@ -5,5 +5,5 @@ using UnityEngine.SceneManagement;
 
 public class healthManager : MonoBehaviour
 {
-    public float health = 10.0f;
+    public float health;
 }
