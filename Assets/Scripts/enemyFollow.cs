@@ -16,6 +16,10 @@ public class enemyFollow : MonoBehaviour
     private float step;
     // Update is called once per frame
 
+    public AudioSource EnemyFollow;
+    public AudioSource EnemyShot;
+
+
     void Start()
     {
         enemyParent = this.transform.parent.gameObject;
@@ -25,11 +29,13 @@ public class enemyFollow : MonoBehaviour
     {   
         if (target != null)
         {
+
             Vector3 direction = target.position - enemyParent.transform.position;
             //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             //rb.rotation = angle;
             direction.Normalize();
             movement = direction;
+
         }
     }
 
@@ -50,10 +56,13 @@ public class enemyFollow : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            EnemyFollow.Play();
             target = other.transform;
             if(timeBetweenShots <= 0)
             {
+
                 Instantiate(bullet, firePoint.position, Quaternion.identity);
+                EnemyShot.Play();
                 timeBetweenShots = startTimeBtwShots;
             }
             else

@@ -18,6 +18,7 @@ public class enemy : MonoBehaviour
         {
             if (attackSpeed <= canAttack)
             {
+
                 other.gameObject.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
                 canAttack = 0f;
             }
@@ -31,11 +32,14 @@ public class enemy : MonoBehaviour
     public void takeDamage(float damage)
     {
         health -= damage;
-        if(health <= 0)
+
+
+        if (health <= 0)
         {
-            Destroy(gameObject);
             EnemyDeath.Play();
+            Destroy(gameObject, 1);//waits 1 second to destroy the object so sound can play
         }
+
     }
 
 
