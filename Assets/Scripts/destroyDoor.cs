@@ -20,4 +20,5 @@ public class destroyDoor : MonoBehaviour
             Destroy(door.GetComponent<Collider2D>());
         }
     }
+
 }

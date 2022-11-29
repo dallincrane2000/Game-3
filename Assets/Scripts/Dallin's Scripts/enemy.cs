@@ -9,7 +9,7 @@ public class enemy : MonoBehaviour
     [SerializeField] private float attackSpeed = 1f;
     private float canAttack;
     public float health = 10.0f;
-    
+
     public AudioSource EnemyDeath;
 
     private void OnCollisionStay2D(Collision2D other)
@@ -36,11 +36,6 @@ public class enemy : MonoBehaviour
 
         if (health <= 0)
         {
-<<<<<<< HEAD
-=======
-            
-            Destroy(gameObject);
->>>>>>> 59147d8fd1609ac6a6915ad9b10acbf7f4512bde
             EnemyDeath.Play();
             Destroy(gameObject, 1);//waits 1 second to destroy the object so sound can play
         }

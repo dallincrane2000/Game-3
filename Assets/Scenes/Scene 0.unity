@@ -12327,7 +12327,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
-<<<<<<< HEAD
 --- !u!1001 &350910857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12399,8 +12398,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d9431051017352b49b67ef7097972e59, type: 3}
-=======
->>>>>>> 59147d8fd1609ac6a6915ad9b10acbf7f4512bde
 --- !u!114 &365806985 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6204383959191623830, guid: 5470ceec15fa22949b840dc32d69dc41,
