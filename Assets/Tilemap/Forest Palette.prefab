@@ -5771,7 +5771,7 @@ Transform:
   m_Children:
   - {fileID: 683351882718449668}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &2353980144591417047
 Grid:
